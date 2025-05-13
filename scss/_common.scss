@@ -1,0 +1,7 @@
+@charset "UTF-8";
+
+header { width: 1400px; margin: 0 auto; display: flex;}
+header ul {display: flex;}
+
+.search {background-color: #ececec; width: 200px; border-radius: 6px; height: 30px; justify-content: flex-end;}
+.search i { margin-left: 10px; line-height: 30px;}
