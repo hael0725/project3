@@ -14,24 +14,81 @@ a {
 }
 
 header {
-  width: 1400px;
+  width: 1200px;
+  height: 120px;
+  background-color: rgba(250, 235, 215, 0);
   margin: 0 auto;
-  display: flex;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 header ul {
   display: flex;
 }
 
-.search {
+.logo {
+  padding-top: 10px;
+}
+
+#topbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+#nav {
+  width: 333px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
   background-color: #ececec;
   width: 200px;
   border-radius: 6px;
-  height: 30px;
-  justify-content: flex-end;
+  height: 35px;
 }
 
-.search i {
+#search i {
   margin-left: 10px;
-  line-height: 30px;
+  line-height: 35px;
+}
+
+input {
+  background-color: transparent;
+  border: none;
+}
+
+.inpo li {
+  padding: 0 6px;
+  line-height: 35px;
+  color: #838383;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+#menu li {
+  padding: 25px 6px;
+  cursor: pointer;
+}
+
+#menu svg {
+  vertical-align: middle;
+}
+
+.book li:hover {
+  color: #838383;
+}
+
+.cat {
+  font-size: 15px;
+}
+
+.cat svg {
+  padding: 0 3px;
 }

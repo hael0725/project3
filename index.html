@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
+
 <body>
     <header>
         <div id="topbar">
-            <img src="./img/LOGO.jpg" alt="">
-            <div class="search">
-                <i class="fa-solid fa-magnifying-glass" style="color: #b8b8b8;"></i>
+            <div class="logo"><img src="./img/LOGO.jpg" alt=""></div>
+            <div id="nav">
+                <div id="search">
+                    <i class="fa-solid fa-magnifying-glass" style="color: #b8b8b8;"></i><input type="text">
+                </div>
+                <ul class="inpo">
+                    <li>회원가입</li>
+                    <li>로그인</li>
+                </ul>
             </div>
-            <ul id="inpo">
-                <li>회원가입</li>
-                <li>로그인</li>
-            </ul>
         </div>
         <div id="menu">
-             <ul class="book">
+            <ul class="book">
                 <li>웹툰</li>
                 <li>만화</li>
                 <li>웹소설</li>
-                <li>도서</li>
-                <li>셀렉트</li>
+                <li style="color: #1b9dff;">도서</li>
+                <li>셀렉트<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -860 960 960" width="20px"
+                        fill="#434343">
+                        <path
+                            d="M216-144q-29.7 0-50.85-21.15Q144-186.3 144-216v-528q0-29.7 21.15-50.85Q186.3-816 216-816h264v72H216v528h528v-264h72v264q0 29.7-21.15 50.85Q773.7-144 744-144H216Zm171-192-51-51 357-357H576v-72h240v240h-72v-117L387-336Z" />
+                    </svg></li>
             </ul>
             <ul class="cat">
-                <li>전체 카테고리</li>
-                <li>캐시충전</li>
+                <li><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -860 960 960" width="24px"
+                        fill="#434343">
+                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                    </svg>전체 카테고리</li>
             </ul>
         </div>
     </header>
@@ -44,5 +56,43 @@
             <li>에세이/시</li>
         </ul>
     </div>
+
+    <footer>
+        <ul>
+            <li>고객센터</li>
+            <li>공지사항</li>
+        </ul>
+        <div id="service">
+            <h4>서비스</h4>
+            <ul>
+                <li>제휴카드</li>
+                <li>뷰어 다운로드</li>
+                <li>CP사이트</li>
+                <li>리디바탕</li>
+            </ul>
+        </div>
+        <div id="etc">
+            <h4>기타 문의</h4>
+            <ul>
+                <li>콘텐츠 제공 문의</li>
+                <li>사업 제휴 문의</li>
+            </ul>
+        </div>
+        <div id="com">
+            <h4>회사</h4>
+            <ul>
+                <li>회사 소개</li>
+                <li>인재채용</li>
+            </ul>
+        </div>
+        <div id="sns">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-tiktok"></i>
+        </div>
+    </footer>
 </body>
-</html> 
+
+</html>
