@@ -2,3 +2,9 @@
 
 @import "reset", "common";
 
+// 메인 슬라이더
+#main {width: 1170px; height: 500px; margin: 0 auto; padding: 15px 0;}
+.barmenu {width: 500px; display: flex; justify-content: space-between; font-weight: bold;}
+.barmenu li {cursor: pointer; transition: color 0.2s ease;}
+.barmenu li:hover {color: #979797; }
+.barmenu li:first-child {width: 45px; height: 27px; background-color: #1b9dff; color: #fff; border-radius: 30px; text-align: center; cursor:default;}

@@ -14,7 +14,7 @@ a {
 }
 
 header {
-  width: 1200px;
+  width: 1170px;
   height: 120px;
   background-color: rgba(250, 235, 215, 0);
   margin: 0 auto;
@@ -27,6 +27,12 @@ header ul {
 
 .logo {
   padding-top: 10px;
+  background-color: rgba(128, 128, 128, 0);
+}
+
+.logo svg {
+  width: 60px;
+  height: auto;
 }
 
 #topbar {
@@ -63,7 +69,7 @@ input {
   line-height: 35px;
   color: #838383;
   font-weight: bold;
-  font-size: 15px;
+  font-size: 13.5px;
 }
 
 #menu {
@@ -72,8 +78,8 @@ input {
   font-weight: bold;
 }
 
-#menu li {
-  padding: 25px 6px;
+#menu .book li {
+  padding: 25px 19px 25px 0;
   cursor: pointer;
 }
 
@@ -89,6 +95,109 @@ input {
   font-size: 15px;
 }
 
+.cat li {
+  padding: 25px 0;
+}
+
+.cat li:first-child {
+  padding: 25px 18px 25px 0;
+}
+
+.cat span {
+  font-size: 20px;
+  padding: 21px 3px 22px 0;
+}
+
 .cat svg {
   padding: 0 3px;
+}
+
+footer {
+  width: 1170px;
+  height: 300px;
+  margin: 0 auto;
+  border-top: 1px solid #d1d1d1;
+  color: #777777;
+}
+
+#wrap {
+  display: flex;
+  padding: 40px 0;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 30px;
+}
+
+.not {
+  font-weight: bold;
+}
+
+#sns i {
+  border: 1px solid #d1d1d1;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 50%;
+  margin: 0 2px;
+}
+
+#copy {
+  display: flex;
+  flex-direction: column;
+  font-size: 12.5px;
+  line-height: 25px;
+}
+
+#copy ul {
+  display: flex;
+  font-size: 11px;
+}
+
+#copy li {
+  padding: 0 5px 0 0;
+}
+
+#copy span {
+  padding-right: 5px;
+  color: #ececec;
+}
+
+#copy p {
+  font-weight: bold;
+  font-size: 10px;
+  color: #979797;
+}
+
+#main {
+  width: 1170px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+
+.barmenu {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.barmenu li {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.barmenu li:hover {
+  color: #979797;
+}
+
+.barmenu li:first-child {
+  width: 45px;
+  height: 27px;
+  background-color: #1b9dff;
+  color: #fff;
+  border-radius: 30px;
+  text-align: center;
+  cursor: default;
 }

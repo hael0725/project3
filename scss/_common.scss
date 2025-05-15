@@ -1,19 +1,37 @@
 @charset "UTF-8";
-
-header { width: 1200px;  height: 120px; background-color: rgba(250, 235, 215, 0); margin: 0 auto; border-bottom: 1px solid #d1d1d1;}
+// 헤더
+header { width: 1170px;  height: 120px; background-color: rgba(250, 235, 215, 0); margin: 0 auto; border-bottom: 1px solid #d1d1d1;}
 header ul {display: flex;}
 
-.logo {padding-top: 10px;}
+.logo {padding-top: 10px; background-color: #80808000;}
+.logo svg {width: 60px; height: auto;}
 #topbar {display: flex; justify-content: space-between; padding-top: 16px;}
 #nav {width: 333px; display: flex; justify-content: space-between;}
 #search {background-color: #ececec; width: 200px; border-radius: 6px; height: 35px;}
 #search i { margin-left: 10px; line-height: 35px;}
 input {background-color: transparent; border: none;}
-.inpo li {padding: 0 6px; line-height: 35px; color: #838383; font-weight: bold; font-size: 15px;}
+.inpo li {padding: 0 6px; line-height: 35px; color: #838383; font-weight: bold; font-size: 13.5px;}
 
 #menu {display: flex; justify-content: space-between; font-weight: bold;}
-#menu li {padding: 25px 6px; cursor: pointer;}
+#menu .book li {padding: 25px 19px 25px 0; cursor: pointer;}
 #menu svg {vertical-align: middle;}
 .book li:hover {color: #838383;}
 .cat {font-size: 15px;}
+.cat li {padding: 25px 0;}
+.cat li:first-child {padding: 25px 18px 25px 0;}
+.cat span {font-size: 20px; padding: 21px 3px 22px 0;}
 .cat svg {padding: 0 3px;}
+
+
+
+
+// 푸터
+footer {width: 1170px; height: 300px; margin: 0 auto; border-top: 1px solid #d1d1d1; color: #777777;}
+#wrap {display: flex; padding: 40px 0; justify-content: space-between; font-size: 13px; line-height: 30px; }
+.not {font-weight: bold;}
+#sns i {border: 1px solid #d1d1d1; width: 45px; height: 45px; text-align: center; line-height: 45px; border-radius: 50%; margin: 0 2px;}
+#copy {display: flex; flex-direction: column; font-size: 12.5px; line-height: 25px;}
+#copy ul {display: flex; font-size: 11px;}
+#copy li {padding: 0 5px 0 0;}
+#copy span {padding-right: 5px; color: #ececec;}
+#copy p {font-weight: bold; font-size: 10px; color: #979797;}
