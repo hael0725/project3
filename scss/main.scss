@@ -3,8 +3,38 @@
 @import "reset", "common";
 
 // 메인 슬라이더
-#main {width: 1170px; height: 500px; margin: 0 auto; padding: 15px 0;}
-.barmenu {width: 500px; display: flex; justify-content: space-between; font-weight: bold;}
+#main {width: 1170px; height: 600px; margin: 0 auto; padding: 15px 0; background-color: #b6dfff;}
+.barmenu {width: 500px; height: 50px; display: flex; justify-content: space-between; font-weight: bold;}
 .barmenu li {cursor: pointer; transition: color 0.2s ease;}
 .barmenu li:hover {color: #979797; }
 .barmenu li:first-child {width: 45px; height: 27px; background-color: #1b9dff; color: #fff; border-radius: 30px; text-align: center; cursor:default;}
+
+#banner {width: 1170px; height: 400px; background-color: antiquewhite; margin: 0 auto; display: flex; position: relative;}
+.wrap {width: 1170px; height: 400px; background-color: rgb(198, 250, 233);margin: 0 auto; overflow: hidden;}
+.allslide {width: 1000%;}
+#banner .btn {width: 35px; height: 35px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 35px; position: absolute; top: 50%;  transform: translateY(-50%); box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);;}
+
+#banner .prev {left: -18px;}
+#banner .next {right: -18px;}
+
+.slide {height: 400px; float: left; margin-right: 5px; border-radius: 5px; background-position: center; box-shadow: 0px -50px 100px 10px #33333354 inset;}
+.slide .info-wrap {display: flex; width: 100%; margin-top: 200px; padding: 20px 45px 30px 45px;}
+.slide .only {width: 40px; border: 1px solid #fff; border-radius: 3px}
+.slide .text {width: 100%;color: #fff;}
+.slide .page {background-color: #5353534f; width: 50px; height: 25px; justify-content: flex-end; text-align: center; line-height: 25px; color: #fff; font-size: 13px; border-radius: 30px; margin-top: 120px;}
+.page p {font-weight: bold;}
+.page span {color: #ffffff67;}
+
+
+
+// 백그라운드 이미지 ::::::::::::::::::::::::::::::::::::::::::::::
+.slide1 {width: 1064px; background-image: url(https://active.ridibooks.com/ridibooks_banner/3dfe7af5-5e2a-47b1-92b1-6c84e3864779.jpg);}
+.slide2 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/1662599175090_MjIwODIz.jpg);}
+.slide3 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/5b63bc5a-47b8-4554-9e90-fc31b1aac7f4.jpg);}
+.slide4 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/7432bf36-9063-4631-a7fb-ccc986dbc238.jpg);}
+.slide5 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/3d156e70-0642-4f4a-b1c5-3df6cbd3f968.jpg);}
+.slide6 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/6a6db228-5f40-4338-89b8-8e6c968e2b12.png);}
+.slide7 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/8f09a40d-4773-42ae-a7ca-bb3593c1cd71.jpeg);}
+.slide8 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/2b9cdecc-8b50-429f-9951-9d4cdc65f74c.jpeg);}
+.slide9 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/23536b7a-a592-4f46-a93a-272837dd636b.jpeg);}
+.slide10 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/7c068688-f224-4436-a3c5-92320ac1b9eb.jpg);}
