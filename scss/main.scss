@@ -2,29 +2,36 @@
 
 @import "reset", "common";
 
-// 메인 슬라이더
-#main {width: 1170px; height: 600px; margin: 0 auto; padding: 15px 0; background-color: #b6dfff;}
+// 메인 슬라이더 :::::::::::::::::::::::::::::::::::::::::::::::::
+#main {width: 1170px; height: 640px; margin: 0 auto; padding: 15px 0; background-color: #b6dfff00;}
 .barmenu {width: 500px; height: 50px; display: flex; justify-content: space-between; font-weight: bold;}
 .barmenu li {cursor: pointer; transition: color 0.2s ease;}
 .barmenu li:hover {color: #979797; }
 .barmenu li:first-child {width: 45px; height: 27px; background-color: #1b9dff; color: #fff; border-radius: 30px; text-align: center; cursor:default;}
 
-#banner {width: 1170px; height: 400px; background-color: antiquewhite; margin: 0 auto; display: flex; position: relative;}
-.wrap {width: 1170px; height: 400px; background-color: rgb(198, 250, 233);margin: 0 auto; overflow: hidden;}
+#banner {width: 1170px; height: 400px; margin: 0 auto; display: flex; position: relative; cursor: pointer;}
+#banner .wrap {width: 1170px; height: 400px; margin: 0 auto; overflow: hidden;}
 .allslide {width: 1000%;}
-#banner .btn {width: 35px; height: 35px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 35px; position: absolute; top: 50%;  transform: translateY(-50%); box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);;}
-
+#banner .btn {width: 35px; height: 35px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 35px; position: absolute; top: 50%;  transform: translateY(-50%); box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);cursor: pointer;}
+#banner .btn:hover {color: #979797;}
 #banner .prev {left: -18px;}
 #banner .next {right: -18px;}
 
 .slide {height: 400px; float: left; margin-right: 5px; border-radius: 5px; background-position: center; box-shadow: 0px -50px 100px 10px #33333354 inset;}
-.slide .info-wrap {display: flex; width: 100%; margin-top: 200px; padding: 20px 45px 30px 45px;}
+.slide h1, .slide p {white-space: nowrap;}
+.slide .info-wrap {display: flex; width: 100%; margin-top: 200px; padding: 20px 40px 30px 55px;}
 .slide .only {width: 40px; border: 1px solid #fff; border-radius: 3px}
-.slide .text {width: 100%;color: #fff;}
-.slide .page {background-color: #5353534f; width: 50px; height: 25px; justify-content: flex-end; text-align: center; line-height: 25px; color: #fff; font-size: 13px; border-radius: 30px; margin-top: 120px;}
+.slide .text {width: 100%;color: #fff; white-space: nowrap;}
+.slide .page {background-color: #00000034; width: 50px; height: 25px; justify-content: flex-end; text-align: center; line-height: 25px; color: #fff; font-size: 13px; border-radius: 30px; margin-top: 120px;}
 .page p {font-weight: bold;}
 .page span {color: #ffffff67;}
 
+// 아이콘 메뉴 :::::::::::::::::::::::::::::::::::::::::::::
+#iconmenu {margin: 40px 0; width: 1110px; height: 94px;}
+#iconmenu ul{display: flex; justify-content: center;}
+#iconmenu li {height: 94px; padding: 0 10px; cursor: pointer;}
+#iconmenu li img {width: 70px; height: 70px;}
+#iconmenu li p {text-align: center; font-size: 13px; font-weight: 500;}
 
 
 // 백그라운드 이미지 ::::::::::::::::::::::::::::::::::::::::::::::
@@ -38,3 +45,18 @@
 .slide8 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/2b9cdecc-8b50-429f-9951-9d4cdc65f74c.jpeg);}
 .slide9 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/23536b7a-a592-4f46-a93a-272837dd636b.jpeg);}
 .slide10 {width: 48px; background-image: url(https://active.ridibooks.com/ridibooks_banner/7c068688-f224-4436-a3c5-92320ac1b9eb.jpg);}
+
+
+
+// 리디의 발견 :::::::::::::::::::::::::::::::::::::
+#discovery {width: 1170px; height: 400px; margin: 0 auto; padding: 0 30px;}
+#discovery h2 {font-size: 22px; padding: 20px 0; line-height: 26px;}
+#discovery .wrap {display: flex;}
+#discovery .book1 {width: 180px; height: 100%; margin: 0 auto;}
+#discovery .book1 img {width: 180px; height: 261px; border-radius: 5px;}
+#discovery .book1 h5 {font-size: 15px;}
+
+// 지금 많이 읽고 있는 작품 ::::::::::::::::::::::::::::::::::::::::
+#book-ranking {width: 1170px; height: auto; background-color: #95caf1; margin: 0 auto; padding: 30px;}
+#book-ranking .wrap {background-color: pink; display: flex;}
+.grid {width: 360px; height: 360px; background-color: aliceblue; margin: 0 auto;}

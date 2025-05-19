@@ -97,6 +97,7 @@ input {
 
 .cat li {
   padding: 25px 0;
+  cursor: pointer;
 }
 
 .cat li:first-child {
@@ -171,10 +172,10 @@ footer {
 
 #main {
   width: 1170px;
-  height: 600px;
+  height: 640px;
   margin: 0 auto;
   padding: 15px 0;
-  background-color: #b6dfff;
+  background-color: rgba(182, 223, 255, 0);
 }
 
 .barmenu {
@@ -207,16 +208,15 @@ footer {
 #banner {
   width: 1170px;
   height: 400px;
-  background-color: antiquewhite;
   margin: 0 auto;
   display: flex;
   position: relative;
+  cursor: pointer;
 }
 
-.wrap {
+#banner .wrap {
   width: 1170px;
   height: 400px;
-  background-color: rgb(198, 250, 233);
   margin: 0 auto;
   overflow: hidden;
 }
@@ -236,6 +236,11 @@ footer {
   top: 50%;
   transform: translateY(-50%);
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);
+  cursor: pointer;
+}
+
+#banner .btn:hover {
+  color: #979797;
 }
 
 #banner .prev {
@@ -255,11 +260,15 @@ footer {
   box-shadow: 0px -50px 100px 10px rgba(51, 51, 51, 0.3294117647) inset;
 }
 
+.slide h1, .slide p {
+  white-space: nowrap;
+}
+
 .slide .info-wrap {
   display: flex;
   width: 100%;
   margin-top: 200px;
-  padding: 20px 45px 30px 45px;
+  padding: 20px 40px 30px 55px;
 }
 
 .slide .only {
@@ -271,10 +280,11 @@ footer {
 .slide .text {
   width: 100%;
   color: #fff;
+  white-space: nowrap;
 }
 
 .slide .page {
-  background-color: rgba(83, 83, 83, 0.3098039216);
+  background-color: rgba(0, 0, 0, 0.2039215686);
   width: 50px;
   height: 25px;
   justify-content: flex-end;
@@ -292,6 +302,34 @@ footer {
 
 .page span {
   color: rgba(255, 255, 255, 0.4039215686);
+}
+
+#iconmenu {
+  margin: 40px 0;
+  width: 1110px;
+  height: 94px;
+}
+
+#iconmenu ul {
+  display: flex;
+  justify-content: center;
+}
+
+#iconmenu li {
+  height: 94px;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+#iconmenu li img {
+  width: 70px;
+  height: 70px;
+}
+
+#iconmenu li p {
+  text-align: center;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .slide1 {
@@ -342,4 +380,57 @@ footer {
 .slide10 {
   width: 48px;
   background-image: url(https://active.ridibooks.com/ridibooks_banner/7c068688-f224-4436-a3c5-92320ac1b9eb.jpg);
+}
+
+#discovery {
+  width: 1170px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+#discovery h2 {
+  font-size: 22px;
+  padding: 20px 0;
+  line-height: 26px;
+}
+
+#discovery .wrap {
+  display: flex;
+}
+
+#discovery .book1 {
+  width: 180px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+#discovery .book1 img {
+  width: 180px;
+  height: 261px;
+  border-radius: 5px;
+}
+
+#discovery .book1 h5 {
+  font-size: 15px;
+}
+
+#book-ranking {
+  width: 1170px;
+  height: auto;
+  background-color: #95caf1;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+#book-ranking .wrap {
+  background-color: pink;
+  display: flex;
+}
+
+.grid {
+  width: 360px;
+  height: 360px;
+  background-color: aliceblue;
+  margin: 0 auto;
 }
