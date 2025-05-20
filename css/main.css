@@ -87,7 +87,7 @@ input {
   vertical-align: middle;
 }
 
-.book li:hover {
+.book li a:hover {
   color: #838383;
 }
 
@@ -191,7 +191,7 @@ footer {
   transition: color 0.2s ease;
 }
 
-.barmenu li:hover {
+.barmenu li a:hover {
   color: #979797;
 }
 
@@ -417,20 +417,97 @@ footer {
 
 #book-ranking {
   width: 1170px;
-  height: auto;
-  background-color: #95caf1;
+  height: 460px;
+  background-color: #95cbf1;
   margin: 0 auto;
   padding: 30px;
+  position: relative;
+}
+
+#book-ranking h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
 }
 
 #book-ranking .wrap {
-  background-color: pink;
+  height: 370px;
+  background-color: rgb(255, 192, 203);
+  display: flex;
+}
+
+#book-ranking .wrap2 {
   display: flex;
 }
 
 .grid {
   width: 360px;
-  height: 360px;
-  background-color: aliceblue;
+  height: 370px;
+  background-color: rgb(240, 248, 255);
   margin: 0 auto;
+  overflow: hidden;
+}
+
+.grid2 {
+  display: flex;
+  flex-direction: row;
+}
+
+.book2 {
+  display: flex;
+}
+
+.book-info {
+  padding-top: 20px;
+}
+
+.grid .bookimg img {
+  width: 80px;
+  height: 116px;
+  border-radius: 4px;
+  margin: 2px 0;
+}
+
+.grid .rank {
+  width: 80px;
+  height: 116px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.grid .by {
+  font-size: 14px;
+  color: #787878;
+}
+
+.grid .rating {
+  color: #dc3232;
+  font-size: 13px;
+}
+
+#book-ranking .btn {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  top: 50%;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);
+  cursor: pointer;
+}
+
+#book-ranking .btn:hover {
+  color: #979797;
+}
+
+#book-ranking .prev2 {
+  left: -15px;
+  display: none;
+}
+
+#book-ranking .next2 {
+  right: 15px;
 }

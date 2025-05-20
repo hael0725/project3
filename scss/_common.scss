@@ -15,7 +15,7 @@ input {background-color: transparent; border: none;}
 #menu {display: flex; justify-content: space-between; font-weight: bold;}
 #menu .book li {padding: 25px 19px 25px 0; cursor: pointer;}
 #menu svg {vertical-align: middle;}
-.book li:hover {color: #838383;}
+.book li a:hover {color: #838383;}
 .cat {font-size: 15px;}
 .cat li {padding: 25px 0; cursor: pointer;}
 .cat li:first-child {padding: 25px 18px 25px 0;}

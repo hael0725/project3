@@ -4,13 +4,6 @@ $(document).ready(function () {
     $(".slide").not(":first").css({ "width": "48px" });
     $(".page").eq(0).show();
     $(".text").eq(0).show();
-    // $(".prev_2").addClass("hide");
-    // $(".prev_3").addClass("hide");
-    // $(".prev_4").addClass("hide");
-    // $(".prev_5").addClass("hide");
-    // $(".prev_6").addClass("hide");
-    // $(".prev_7").addClass("hide");
-
 
     function prev() {
         $(".slide:last").prependTo(".allslide").css({ "width": 0 });
