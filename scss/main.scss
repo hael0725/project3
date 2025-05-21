@@ -57,14 +57,16 @@
 #discovery .book1 h5 {font-size: 15px;}
 
 // 지금 많이 읽고 있는 작품 ::::::::::::::::::::::::::::::::::::::::
-#book-ranking {width: 1170px; height: 460px; background-color: #95cbf1; margin: 0 auto; padding: 30px; position: relative;}
+#book-ranking {width: 1110px; height: 460px; margin: 0 auto; position: relative;}
 #book-ranking h2 {font-size: 22px; margin-bottom: 20px;}
-#book-ranking .wrap {height: 370px; background-color: rgb(255, 192, 203); display: flex;}
-#book-ranking .wrap2 {display: flex;}
-.grid {width: 360px; height: 370px; background-color: rgb(240, 248, 255); margin: 0 auto; overflow: hidden;}
-.grid2 {display: flex; flex-direction: row;}
+.sliderwrap {width: 1110px; height: 460px; overflow: hidden;}
+.gridwrap {width: 2420px; height: 370px;}
 
-.book2 {display: flex;}
+#book-ranking .wrap {width: 1110px; height: 370px; display: flex; float: left; }
+#book-ranking .wrap2 {display: flex; height: 370px; float: left;}
+.grid {width: 370px; height: 360px; margin: 0 auto; }
+
+.book2 {display: flex; width: 370px;}
 .book-info {padding-top: 20px;}
 .grid .bookimg img {width: 80px; height: 116px; border-radius: 4px; margin: 2px 0;}
 .grid .rank {width: 80px; height: 116px; display: flex;  justify-content: center; align-items: center; font-weight: bold;}
@@ -75,3 +77,11 @@
 #book-ranking .btn:hover {color: #979797;}
 #book-ranking .prev2 {left: -15px; display: none;}
 #book-ranking .next2 {right: 15px;}
+
+// MD PICK ::::::::::::::::::::::::::::::::::::: 
+#md {width: 1110px; height: 274px; background-color: #1b9dff; margin: 0 auto; }
+#md .boxwrap {display: flex;}
+#md .wrap {margin: 0 auto; height: 226px; padding: 55px 0; background-color: #fab4b4; text-align: center;}
+#md .box {width: 366px; height: 100px; background-color: #c9c4c4; display: flex; }
+#md .boximg {width: auto; height: 150px; background-color: pink; margin: -50px auto; overflow: hidden;}
+#md .text p {color: #979797; font-size: 15px;}

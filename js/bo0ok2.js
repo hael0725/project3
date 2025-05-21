@@ -13,7 +13,7 @@ $.ajax({
             var title = msg.documents[i].title;
 
             if (title.length > 13) {
-                $(".myBookText a h4").eq(i).append("...");
+                $(".title a").eq(i).append("...");
             }
 
         }
