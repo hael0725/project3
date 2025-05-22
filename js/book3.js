@@ -1,7 +1,7 @@
 $.ajax({
     method: "GET",
     url: `https://dapi.kakao.com/v3/search/book?target=title`,
-    data: { query: "해리포터" },
+    data: { query: "추천" },
     headers: { Authorization: "KakaoAK 3e72338bf5f39f0b5513f22abd6a2ed7" }
 })
     .done(function (msg) {

@@ -1,6 +1,4 @@
 
-
-// 리디의 발견:::::::::::::::::::::::::::::::::::::::::::::::::
 async function bookData() {
     const params = new URLSearchParams({
         target: "title",
