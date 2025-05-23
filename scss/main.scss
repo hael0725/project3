@@ -129,8 +129,8 @@
 #new .book5 img {width: 180px; height: 261px; border-radius: 5px;cursor: pointer;}
 #new .book5 h5 {font-size: 15px;}
 #new .by {font-size: 14px; color: #979797;}
-.rating {font-size: 13px;}
-.rating i {color: #cccccc;}
+#new .rating {font-size: 13px;}
+#new .rating i {color: #cccccc;}
 
 // 우주라이크소설 ::::::::::::::::::::::::::: 
 #like {width: 1110px; height: 542px; margin: 0 auto;}
@@ -140,3 +140,25 @@
 #like .imgbox {width: 217px; height: 434px; position: absolute; border-radius: 6px;}
 #like .text {position: relative; width: 100%; height: 100%;}
 #like .text img {width: 180px; height: 126px; margin: 130% 0 0 16px;}
+
+// 셀렉트 :::::::::::::::::::::::::::::::: 
+#select {width: 1170px; height: 200px; margin: 0 auto; padding: 0 30px; position: relative;}
+#select .title {width: 1170px; display: flex;}
+#select h2 {justify-content: flex-start; font-size: 22px; padding: 20px 0; line-height: 26px;}
+#select .title .more {width: 76%; display: flex; justify-content: flex-end; align-items: center; font-size: 17px; color: #a5a5a5;}
+
+
+#select .gridwrap {display: flex;}
+.slideWrap {width: 1110px; overflow: hidden;}
+#select .wrap, #select .wrap2 {display: flex;}
+#select .box {width: 370px; height: 90px; display: flex;}
+#select .imgbox {width: 366px; display: flex; justify-content: flex-end; background-color: rgb(166, 158, 100); border-radius: 4px; overflow: hidden;}
+#select .box img {width: 200px; height: 89px;}
+
+#select .text {width: 366px; display: flex; background-color: #ffffff00; padding: 20px 0 0 20px;}
+#select .text p {color: #fff; font-weight: 600; font-size: 14px;}
+
+#select .btn {width: 35px; height: 35px; border-radius: 50%; background-color: #fff; text-align: center; line-height: 35px; position: absolute; top: 50%; box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.151);cursor: pointer;}
+#select .btn:hover {color: #979797;}
+#select .prev4 {left: 10px; display: none;}
+#select .next4 {right: 15px;}
