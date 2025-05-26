@@ -2,6 +2,8 @@
 
 @import "reset", "common";
 
+#menu .blue { color:  #1b9dff;}
+
 // 메인 슬라이더 :::::::::::::::::::::::::::::::::::::::::::::::::
 #main {width: 1170px; height: 640px; margin: 0 auto; padding: 15px 0; background-color: #b6dfff00;}
 .barmenu {width: 500px; height: 50px; display: flex; justify-content: space-between; font-weight: bold;}
