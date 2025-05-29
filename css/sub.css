@@ -257,7 +257,7 @@ footer {
 }
 
 .book_cover button:hover {
-  border: 1px solid #464646;
+  border: 1px solid #7a7a7a;
 }
 
 .info_wrap {
@@ -291,18 +291,18 @@ footer {
   font-size: 12px;
 }
 
-.title_box .info_ {
+#top .title_box .info_ {
   color: #555555;
   font-weight: 500;
   font-size: 14px;
   margin: 5px 0;
 }
 
-.info_box {
+#top .info_box {
   margin: 18px 0;
 }
 
-.like {
+#top .like {
   height: 34px;
   color: #1E9EFF;
   border: 1px solid #1E9EFF;
@@ -315,7 +315,7 @@ footer {
   cursor: pointer;
 }
 
-.select {
+#top .select {
   display: flex;
   width: 642px;
   height: 41px;
@@ -325,7 +325,7 @@ footer {
   margin: 16px 0;
 }
 
-.select .btn {
+#top .select .btn {
   width: 40px;
   height: 19px;
   background-color: #EDE7D8;
@@ -338,12 +338,54 @@ footer {
   margin: 0 16px 0 0;
 }
 
-.select i {
+#top .select i {
   color: #b4b4b4;
 }
 
-.select .text {
+#top .select .text {
   width: 570px;
   font-size: 15px;
   font-weight: 500;
+}
+
+#top .price_box {
+  width: 642px;
+  height: 92px;
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+  display: flex;
+}
+
+#top .first_box {
+  width: 120px;
+  height: 90px;
+  background-color: #fafafa;
+  text-align: center;
+  padding: 40px 0;
+  border-right: 1px solid #e6e6e6;
+  font-size: 14px;
+}
+
+#top .box_wrap {
+  padding: 10px 0 10px 10px;
+}
+
+#top .box {
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #555555;
+}
+
+#top .price_ {
+  width: 452px;
+}
+
+#top .price {
+  width: 405px;
+}
+
+#top .hcg {
+  display: flex;
 }

@@ -20,18 +20,27 @@
 .book_cover {width: 204px; height: 467px;} 
 .book_cover .img_box img {border-radius: 4px; width: 204px; height: 306px; cursor: zoom-in;}
 .book_cover button {width: 204px; height: 48px; margin: 0 auto; color: #333; background-color: #fff; border: 1px solid #e6e6e6; border-radius: 6px; cursor: pointer; font-weight: 600; font-size: 16px; transition: border-color 0.5s ease;}
-.book_cover button:hover {border: 1px solid #464646;}
+.book_cover button:hover {border: 1px solid #7a7a7a;}
 
 .info_wrap {width: 642px; height: 468px; margin-left:30px;}
 .title_box #right {width: 10px; height: 11px; font-size: 10px; text-align: center; line-height: 10px;}
 #top .title {line-height: 38px; margin: 12px 0;}
 #top .book { font-size: 14px; line-height: 17px; font-weight: 600; color: #555555;}
 #top .rating {font-weight: 600; font-size: 12px;}
-.title_box .info_ {color: #555555; font-weight: 500; font-size: 14px; margin: 5px 0;} 
+#top .title_box .info_ {color: #555555; font-weight: 500; font-size: 14px; margin: 5px 0;} 
 
-.info_box { margin: 18px 0;}
-.like {height: 34px; color: #1E9EFF; border: 1px solid #1E9EFF; border-radius: 30px; padding: 1px 9.5px 0px 9.5px; font-size: 14px;  line-height: 17px; font-weight: 600; background-color: #fff; cursor: pointer;}
-.select {display: flex; width: 642px; height: 41px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; align-items: center; margin: 16px 0;}
-.select .btn {width: 40px; height: 19px; background-color: #EDE7D8;font-size: 11px; font-weight: 700; line-height: 19px; border-radius: 2px; color: #AAA068; text-align: center; margin: 0 16px 0 0;}
-.select i {color: #b4b4b4;} 
-.select .text {width: 570px; font-size: 15px; font-weight: 500;}
+#top .info_box { margin: 18px 0;}
+#top .like {height: 34px; color: #1E9EFF; border: 1px solid #1E9EFF; border-radius: 30px; padding: 1px 9.5px 0px 9.5px; font-size: 14px;  line-height: 17px; font-weight: 600; background-color: #fff; cursor: pointer;}
+#top .select {display: flex; width: 642px; height: 41px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; align-items: center; margin: 16px 0;}
+#top .select .btn {width: 40px; height: 19px; background-color: #EDE7D8;font-size: 11px; font-weight: 700; line-height: 19px; border-radius: 2px; color: #AAA068; text-align: center; margin: 0 16px 0 0;}
+#top .select i {color: #b4b4b4;} 
+#top .select .text {width: 570px; font-size: 15px; font-weight: 500;}
+
+#top .price_box {width: 642px; height: 92px; border-top: 1px solid #e6e6e6; border-bottom: 1px solid #e6e6e6; display: flex;}
+#top .first_box {width: 120px; height: 90px; background-color: #fafafa; text-align: center; padding: 40px 0; border-right: 1px solid #e6e6e6; font-size: 14px;}
+#top .box_wrap {padding: 10px 0 10px 10px;}
+#top .box {display: flex; font-size: 14px; line-height: 22px; font-weight: 500; color: #555555;}
+#top .price_ {width: 452px;}
+#top .price {width: 405px;}
+
+#top .hcg {display: flex;}
