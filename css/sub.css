@@ -282,7 +282,7 @@ footer {
 }
 #top .rating {
   font-weight: 600;
-  font-size: 12px;
+  font-size: 14px;
 }
 #top .info_box {
   margin: 18px 0;
@@ -428,7 +428,9 @@ footer {
 
 #book_info {
   width: 936px;
-  height: 1100px;
+}
+#book_info .wrap1 {
+  margin-bottom: 50px;
 }
 #book_info .wrap1 h2 {
   margin-bottom: 15px;
@@ -466,24 +468,54 @@ footer {
 #book_info .wrap1 .info_box .btn.active {
   color: #141414;
   background-color: #ffffff;
+  border-bottom: none;
 }
 #book_info .wrap1 .text_box {
   width: 867px;
-  padding-bottom: 80px;
 }
 #book_info .wrap1 .text_box p {
   color: #555;
   font-size: 15px;
   line-height: 24px;
+  padding-bottom: 43px;
 }
 #book_info .wrap1 .text_box2,
 #book_info .wrap1 .text_box3 {
   display: none;
 }
+#book_info .wrap1 .text_box3 {
+  height: 300px;
+  overflow: hidden;
+  display: none;
+  color: #555;
+  font-size: 15px;
+  line-height: 24px;
+  padding-bottom: 20px;
+  position: relative;
+}
+#book_info .wrap1 .text_box3.gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 216px;
+  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 56px, rgba(255, 255, 255, 0) 100%);
+}
+#book_info .wrap1 .text_box3 .more {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #fff;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  z-index: 1;
+}
 #book_info .wrap2 {
   width: 867px;
-  height: auto;
   border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 50px;
 }
 #book_info .wrap2 h2 {
   margin-bottom: 15px;
@@ -505,27 +537,29 @@ footer {
   line-height: 22px;
   padding: 17px 0 14px;
   border-bottom: 1px solid #cccccc;
-  border: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
 }
 #book_info .wrap2 .btn:nth-child(2) {
   border-left: 1px solid #cccccc;
-  border-bottom: 1px solid #cccccc;
 }
 #book_info .wrap2 .btn.active {
   color: #141414;
   background-color: #ffffff;
+  border-bottom: none;
 }
-#book_info .wrap2 .title_wrap {
+#book_info .wrap2 .text_box2-1 .title_wrap {
   display: flex;
 }
-#book_info .wrap2 .title_wrap h2 {
+#book_info .wrap2 .text_box2-1 .title_wrap h2 {
   padding-right: 10px;
   cursor: pointer;
 }
-#book_info .wrap2 .title_wrap h2:hover {
+#book_info .wrap2 .text_box2-1 .title_wrap h2:hover {
   color: #333;
 }
-#book_info .wrap2 .like {
+#book_info .wrap2 .text_box2-1 .like {
   height: 34px;
   color: #1E9EFF;
   border: 1px solid #1E9EFF;
@@ -537,37 +571,37 @@ footer {
   background-color: #fff;
   cursor: pointer;
 }
-#book_info .wrap2 ul {
+#book_info .wrap2 .text_box2-1 ul {
   display: flex;
   color: #555555;
   font-size: 15px;
   line-height: 28px;
   font-weight: 400;
 }
-#book_info .wrap2 ul .title {
+#book_info .wrap2 .text_box2-1 ul .title {
   color: #a5a5a5;
   min-width: 26px;
   font-weight: 600;
 }
-#book_info .wrap2 ul .sub {
+#book_info .wrap2 .text_box2-1 ul .sub {
   padding-left: 20px;
 }
-#book_info .wrap2 ul .sub.blog {
+#book_info .wrap2 .text_box2-1 ul .sub.blog {
   color: #4076b5;
   font-weight: 600;
 }
-#book_info .wrap2 .wrap {
+#book_info .wrap2 .text_box2-1 .wrap {
   display: flex;
   width: 867px;
   justify-content: flex-end;
   padding-bottom: 20px;
 }
-#book_info .wrap2 .wrap p {
+#book_info .wrap2 .text_box2-1 .wrap p {
   color: #a5a5a5;
   font-size: 14px;
   padding-right: 10px;
 }
-#book_info .wrap2 .wrap button {
+#book_info .wrap2 .text_box2-1 .wrap button {
   color: #787878;
   background-color: #fff;
   border: 1px solid #cccccc;
@@ -578,6 +612,7 @@ footer {
   line-height: 14px;
 }
 #book_info .wrap2 .text_box2-2 {
+  position: relative;
   height: 300px;
   overflow: hidden;
   display: none;
@@ -587,11 +622,25 @@ footer {
   padding-bottom: 20px;
   position: relative;
 }
+#book_info .wrap2 .text_box2-2 p {
+  padding-bottom: 43px;
+}
+#book_info .wrap2 .text_box2-2.gradient::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 216px;
+  background: linear-gradient(0, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 56px, rgba(255, 255, 255, 0) 100%);
+}
 #book_info .wrap2 .text_box2-2 .more {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 50px;
   background-color: #fff;
-  border: 1px solid #555;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+  z-index: 1;
 }
