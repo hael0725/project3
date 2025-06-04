@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 @import "reset", "common";
 
 // 줌인 ::::::::::::::::::::::::::
@@ -414,7 +415,6 @@
     .wrap2 {
         width: 867px;
         border-bottom: 1px solid #e6e6e6;
-        margin-bottom: 50px;
 
 
         h2 {
@@ -541,8 +541,8 @@
             line-height: 24px;
             padding-bottom: 20px;
             position: relative;
-     
-            p{
+
+            p {
                 padding-bottom: 43px;
             }
 
@@ -568,4 +568,163 @@
             }
         }
     }
+
+    .wrap3 {
+        width: 867px;
+        height: 430px;
+        padding-top: 16px;
+
+        .Title {
+            width: 867px;
+            display: flex;
+            padding-bottom: 10px;
+
+            h3 {
+                justify-content: flex-start;
+                font-size: 19px;
+                line-height: 26px;
+            }
+
+            .more {
+                width: 83%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 16px;
+                color: #a5a5a5;
+
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .wrap {
+            display: flex;
+
+            .book1 {
+                width: 180px;
+                height: 100%;
+                margin: 0 auto;
+
+                img {
+                    width: 141px;
+                    height: 204px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                h5 {
+                    font-size: 13px;
+                }
+
+                .by {
+                    font-size: 12px;
+                    color: #979797;
+                }
+
+                .rating {
+                    font-size: 13px;
+
+                    i {
+                        color: #cccccc;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+// 리뷰 :::::::::::::::::::::::::::
+#sub_review {
+    width: 876px;
+    height: auto;
+
+    h3 {
+        font-size: 22px;
+        font-weight: 700;
+        line-height: 26px;
+        padding: 6px 0 16px;
+        margin-bottom: 0;
+    }
+
+    .starbox {
+        width: 100%;
+        height: auto;
+        display: flex;
+        padding: 8px 0 15px;
+        border-bottom: 1px solid #e6e6e6;
+
+        .first {
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 57px;
+            margin-right: 12px;
+        }
+
+        .evaluate_pr {
+            width: 75%;
+            color: #787878;
+            font-weight: 500;
+        }
+    }
+
+    .writeBox {
+        width: 100%;
+        background-color: #1E9EFF;
+
+        .wrap2 {
+            background-color: #cccccc;
+            margin: 0 auto;
+
+            .ev_write {
+                color: #a5a5a5;
+                text-align: center;
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 18px;
+            }
+
+            .writeStar {
+                display: flex;
+                text-align: center;
+                color: #e6e6e6;
+                cursor: pointer;
+                justify-content: center;
+
+                .star {
+                    padding: 1px;
+                }
+
+                .star::after {
+                    font-family: FontAwesome;
+                    content: "\f005";
+                    color: #e6e6e6;
+                    font-size: 20px;
+                }
+
+                .star:hover::after,
+                .star:has(~ .star:hover)::after,
+                .star.active::after,
+                .star:has(~ .star.active)::after {
+                    font-family: FontAwesome;
+                    content: "\f005";
+                    color: #e54c43;
+                }
+
+                .star:hover~.star::after {
+                     font-family: FontAwesome;
+                    content: "\f005";
+                }
+            }
+        }
+
+        #noticeBox {
+            display: none;
+        }
+    }
+
 }

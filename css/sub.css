@@ -1,3 +1,4 @@
+@import url(//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 * {
   margin: 0;
   padding: 0;
@@ -515,7 +516,6 @@ footer {
 #book_info .wrap2 {
   width: 867px;
   border-bottom: 1px solid #e6e6e6;
-  margin-bottom: 50px;
 }
 #book_info .wrap2 h2 {
   margin-bottom: 15px;
@@ -643,4 +643,133 @@ footer {
   border: 1px solid #cccccc;
   border-radius: 6px;
   z-index: 1;
+}
+#book_info .wrap3 {
+  width: 867px;
+  height: 430px;
+  padding-top: 16px;
+}
+#book_info .wrap3 .Title {
+  width: 867px;
+  display: flex;
+  padding-bottom: 10px;
+}
+#book_info .wrap3 .Title h3 {
+  justify-content: flex-start;
+  font-size: 19px;
+  line-height: 26px;
+}
+#book_info .wrap3 .Title .more {
+  width: 83%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 16px;
+  color: #a5a5a5;
+}
+#book_info .wrap3 .Title .more span {
+  cursor: pointer;
+}
+#book_info .wrap3 .wrap {
+  display: flex;
+}
+#book_info .wrap3 .wrap .book1 {
+  width: 180px;
+  height: 100%;
+  margin: 0 auto;
+}
+#book_info .wrap3 .wrap .book1 img {
+  width: 141px;
+  height: 204px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#book_info .wrap3 .wrap .book1 h5 {
+  font-size: 13px;
+}
+#book_info .wrap3 .wrap .book1 .by {
+  font-size: 12px;
+  color: #979797;
+}
+#book_info .wrap3 .wrap .book1 .rating {
+  font-size: 13px;
+}
+#book_info .wrap3 .wrap .book1 .rating i {
+  color: #cccccc;
+}
+
+#sub_review {
+  width: 876px;
+  height: auto;
+}
+#sub_review h3 {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 26px;
+  padding: 6px 0 16px;
+  margin-bottom: 0;
+}
+#sub_review .starbox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 8px 0 15px;
+  border-bottom: 1px solid #e6e6e6;
+}
+#sub_review .starbox .first {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57px;
+  margin-right: 12px;
+}
+#sub_review .starbox .evaluate_pr {
+  width: 75%;
+  color: #787878;
+  font-weight: 500;
+}
+#sub_review .writeBox {
+  width: 100%;
+  background-color: #1E9EFF;
+}
+#sub_review .writeBox .wrap2 {
+  background-color: #cccccc;
+  margin: 0 auto;
+}
+#sub_review .writeBox .wrap2 .ev_write {
+  color: #a5a5a5;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 18px;
+}
+#sub_review .writeBox .wrap2 .writeStar {
+  display: flex;
+  text-align: center;
+  color: #e6e6e6;
+  cursor: pointer;
+  justify-content: center;
+}
+#sub_review .writeBox .wrap2 .writeStar .star {
+  padding: 1px;
+}
+#sub_review .writeBox .wrap2 .writeStar .star::after {
+  font-family: FontAwesome;
+  content: "\f005";
+  color: #e6e6e6;
+  font-size: 20px;
+}
+#sub_review .writeBox .wrap2 .writeStar .star:hover::after,
+#sub_review .writeBox .wrap2 .writeStar .star:has(~ .star:hover)::after,
+#sub_review .writeBox .wrap2 .writeStar .star.active::after,
+#sub_review .writeBox .wrap2 .writeStar .star:has(~ .star.active)::after {
+  font-family: FontAwesome;
+  content: "\f005";
+  color: #e54c43;
+}
+#sub_review .writeBox .wrap2 .writeStar .star:hover ~ .star::after {
+  font-family: FontAwesome;
+  content: "\f005";
+}
+#sub_review .writeBox #noticeBox {
+  display: none;
 }
