@@ -10,7 +10,7 @@ header ul {display: flex;}
 #nav {width: 333px; display: flex; justify-content: space-between;}
 #search {background-color: #ececec; width: 200px; border-radius: 6px; height: 35px;}
 #search i { margin-left: 10px; line-height: 35px;}
-input {background-color: transparent; border: none;}
+input {background-color: transparent; border: none;  outline: none;}
 .inpo li {padding: 0 6px; line-height: 35px; color: #838383; font-weight: bold; font-size: 13.5px;}
 
 #menu {display: flex; justify-content: space-between; font-weight: bold;}
@@ -20,7 +20,6 @@ input {background-color: transparent; border: none;}
 .cat {font-size: 15px;}
 .cat li {padding: 25px 0; cursor: pointer;}
 .cat li:first-child {padding: 25px 18px 25px 0;}
-.cat span {font-size: 20px; padding: 21px 3px 22px 0;}
 .cat svg {padding: 0 3px;}
 
 

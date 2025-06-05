@@ -60,6 +60,13 @@
     width: 1170px;
     height: 100%;
     margin: 0 auto;
+    display: flex;
+
+    .sub_wrap {
+        width: 900px;
+        height: auto;
+        border-right: 1px solid #e6e6e6;
+    }
 }
 
 // 메인 탑 ::::::::::::::::::::::::
@@ -109,7 +116,7 @@
     }
 
     .title_box {
-        #right {
+        #right1, #right2 {
             width: 10px;
             height: 11px;
             font-size: 10px;
@@ -669,16 +676,21 @@
             width: 75%;
             color: #787878;
             font-weight: 500;
+            justify-content: flex-end;
+            display: flex;
+        }
+
+        .star_bx {
+            color: #e54c43;
         }
     }
 
     .writeBox {
         width: 100%;
-        background-color: #1E9EFF;
 
         .wrap2 {
-            background-color: #cccccc;
             margin: 0 auto;
+            padding: 40px;
 
             .ev_write {
                 color: #a5a5a5;
@@ -686,6 +698,7 @@
                 font-size: 15px;
                 font-weight: 500;
                 line-height: 18px;
+                margin-bottom: 20px;
             }
 
             .writeStar {
@@ -703,7 +716,8 @@
                     font-family: FontAwesome;
                     content: "\f005";
                     color: #e6e6e6;
-                    font-size: 20px;
+                    font-size: 46px;
+                    padding: 0 5px;
                 }
 
                 .star:hover::after,
@@ -716,15 +730,355 @@
                 }
 
                 .star:hover~.star::after {
-                     font-family: FontAwesome;
+                    font-family: FontAwesome;
                     content: "\f005";
                 }
             }
         }
 
-        #noticeBox {
-            display: none;
+        .review_box {
+            padding: 14px 16px 16px;
+            border-radius: 6px;
+            border: 1px solid #e6e6e6;
+
+            #review {
+                font-size: 15px;
+                color: #a5a5a5;
+                border: none;
+                outline: none;
+                width: 839px;
+            }
+
+
+            .wrap3 {
+                display: flex;
+
+                .checkbox {
+                    color: #787878;
+                    cursor: pointer;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 17px;
+                    width: 89%;
+
+                    #check {
+                        margin-right: 3px;
+                    }
+                }
+
+                .review_btn {
+                    padding: 9px 18px 8px;
+                    border-radius: 4px;
+                    background: #a5a5a5;
+                    color: white;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+
+
+        .review_notice {
+            padding: 10px 0;
+            color: #787878;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 18px;
+        }
+
+        #purchase_review {
+            padding-top: 20px;
+
+            .review_btn2 {
+                display: flex;
+                padding-bottom: 16px;
+                width: 876px;
+                border-top: 2px solid #787878;
+
+                button {
+                    border: none;
+                }
+
+                .btn {
+                    width: 438px;
+                    height: 57px;
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 22px;
+                    padding: 17px 0 14px;
+                    cursor: pointer;
+
+                    &.btn1 {
+                        color: #141414;
+                        background-color: #ffffff;
+                        border-bottom: none;
+                    }
+
+                    &:nth-child(2) {
+                        border-left: 1px solid #cccccc;
+                        border-right: 1px solid #cccccc;
+                        color: #a5a5a5;
+                        background-color: #f5f5f5;
+
+                        border-bottom: 1px solid #cccccc;
+                    }
+
+
+                }
+
+            }
+
+            .review_btn3 {
+                display: flex;
+                padding: 16px 0;
+
+                .pn {
+                    background: #f5f5f5;
+                    color: #787878;
+                    font-weight: 500;
+                    padding: 10px;
+                    border-radius: 999px;
+                    font-size: 16px;
+                    line-height: 19px;
+                    margin-right: 3px;
+
+                    &.pn_1 {
+                        background: #141414;
+                        color: #ffffff;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+        }
+
+        .purchaseReview {
+            font-size: 15px;
+
+            .prBox {
+                padding-top: 10px;
+
+                &.box_ {
+                    border-top: 1px solid #e6e6e6;
+                }
+
+                .reviewStar {
+                    .rstar {
+                        font-size: 10px;
+                        color: #e54c43;
+
+                        .starcolor_ {
+                            color: #e6e6e6;
+                        }
+                    }
+                }
+
+                .reviewText {
+                    p {
+                        padding: 5px 0;
+                    }
+
+                    .rid {
+                        display: flex;
+                        font-size: 14px;
+                        line-height: 15px;
+                        color: #a5a5a5;
+                        padding: 12px 0px;
+
+                        .puchper {
+                            border: 1px double #cccccc;
+                            font-size: 8px;
+                            width: 31px;
+                            height: 15px;
+                            line-height: 13px;
+                            text-align: center;
+                            margin-right: 3px;
+                        }
+                    }
+
+                    .wrap {
+                        display: flex;
+                        padding-bottom: 10px;
+
+                        .rdate {
+                            color: #a5a5a5;
+
+                            .date {
+                                font-weight: bold;
+                                margin-right: 4px;
+                            }
+
+                            .declare {
+                                a {
+                                    color: #a5a5a5;
+                                }
+
+                            }
+                        }
+
+                        .reviewIcon {
+                            width: 85%;
+                            display: flex;
+                            justify-content: flex-end;
+
+                            .icon {
+                                padding: 8px 7px;
+                                border-radius: 4px;
+                                border: 1px solid #e6e6e6;
+                                background: #ffffff;
+                                color: #787878;
+                                font-size: 13px;
+                                font-variant-numeric: tabular-nums;
+                                font-weight: 500;
+                                line-height: 16px;
+                                margin-right: 4px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+
+                }
+
+                .more {
+                    margin-top: 14px;
+                    font-size: 17px;
+                    font-weight: 400;
+                    width: 100%;
+                    height: 50px;
+                    background-color: #fff;
+                    border: 1px solid #cccccc;
+                    border-radius: 6px;
+                    cursor: pointer;
+                }
+
+                .remark {
+                    font-size: 14px;
+                    color: #787878;
+                }
+            }
         }
     }
+}
 
+// 추천 작품 ::::::::::::::::::::::::::
+#books {
+    padding-top: 70px;
+
+    .wrap1,
+    .wrap2 {
+        width: 867px;
+        height: auto;
+
+        &.wrap2 {
+            padding: 50px 0;
+            margin-bottom: 30px;
+        }
+
+        .Title {
+            width: 867px;
+            display: flex;
+            padding-bottom: 10px;
+
+            h3 {
+                justify-content: flex-start;
+                font-size: 19px;
+                line-height: 26px;
+            }
+
+            .more {
+                width: 83%;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                font-size: 16px;
+                color: #a5a5a5;
+
+                span {
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .wrap {
+            display: flex;
+
+            .book1 {
+                width: 180px;
+                height: 100%;
+                margin: 0 auto;
+
+                img {
+                    width: 141px;
+                    height: 204px;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+
+                h5 {
+                    font-size: 13px;
+                }
+
+                .by {
+                    font-size: 12px;
+                    color: #979797;
+                }
+
+                .rating {
+                    font-size: 13px;
+
+                    i {
+                        color: #cccccc;
+                    }
+                }
+            }
+
+
+
+        }
+    }
+}
+
+aside {
+    width: 270px;
+
+    img {
+        width: 270px;
+        height: 280px;
+    }
+
+    .lank_box {
+        padding-top: 20px;
+        h4 {
+            text-align: left;
+            width: 80%;
+            margin-bottom: 10px;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        table {
+            
+            font-size: 14px;
+            th {
+                text-align: left;
+                padding-right: 10px;
+                font-weight: 500;
+                color: rgb(211, 4, 4);
+
+                td {
+                    color: #555555;;
+                }
+            }
+        }
+    }
 }

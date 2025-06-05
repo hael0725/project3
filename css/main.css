@@ -62,6 +62,7 @@ header ul {
 input {
   background-color: transparent;
   border: none;
+  outline: none;
 }
 
 .inpo li {
@@ -102,11 +103,6 @@ input {
 
 .cat li:first-child {
   padding: 25px 18px 25px 0;
-}
-
-.cat span {
-  font-size: 20px;
-  padding: 21px 3px 22px 0;
 }
 
 .cat svg {

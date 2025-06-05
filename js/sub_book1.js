@@ -6,7 +6,7 @@ $.ajax({
 })
     .done(function (msg) {
 
-        for (var i = 0; i < 23; i++) {
+        for (var i = 0; i < msg.documents.length; i++) {
             $(".wrap3 .imgbox").eq(i).append("<img src ='" + msg.documents[i].thumbnail + "'/>");
             $(".wrap3 .title").eq(i).append("<h5>" + msg.documents[i].title.substring(0, 14) + "</h5>");
             $(".wrap3 .by").eq(i).append(msg.documents[i].authors[0]);
